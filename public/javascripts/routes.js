@@ -3,5 +3,6 @@
  */
 
 module.exports = {
-  '/': 'index'
+  '/': 'index',
+  '/questions/:question': 'question'
 };

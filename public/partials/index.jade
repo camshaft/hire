@@ -1,4 +1,6 @@
-h1 Poe UI
+h1(data-hyper-bind=".introduction")
 
-span Hello
-span(data-hyper-bind=".hello")
+p(data-hyper-bind=".description")
+
+form(data-hyper-form=".start", data-hyper-handle="start")
+  input(type="submit", value="Start")
