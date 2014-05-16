@@ -26,8 +26,8 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res) {
   res.json({
-    introduction: 'Welcome to your future, pal.',
-    description: 'Use the innernette. Unlimited time.',
+    introduction: 'welcome to ur future',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium, turpis ut dapibus pretium, sapien lorem iaculis nibh, quis luctus ipsum magna quis tellus. Nam tincidunt sed nulla vel ultrices. Duis augue urna, posuere ut orci eleifend, pharetra auctor elit. Sed quis turpis eu est cursus sodales. Quisque sit amet dolor eget neque hendrerit dapibus vel at urna. Curabitur vel tincidunt leo. Duis pulvinar, purus ut auctor aliquam, nunc urna tincidunt nibh, vel rhoncus enim metus vitae massa. Mauris rutrum scelerisque tempus. Vivamus convallis viverra leo, malesuada dictum ante malesuada quis. Mauris vitae tortor et eros sagittis dapibus sit amet at metus. Nam id velit faucibus, tempor diam eu, tincidunt tortor.',
     start: {
       action: req.base,
       method: 'POST',
