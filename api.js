@@ -6,6 +6,8 @@ var express = require('express');
 
 var app = module.exports = express();
 
+app.use(express.json());
+
 app.use(function(req, res, next) {
   req.base += '/api';
   var url = req.base + (req.url === '/' ? '' : req.url);
@@ -51,7 +53,7 @@ app.get('/questions/:id', function(req, res) {
         answer: {
           type: 'code',
           required: true,
-          syntax: 'js'
+          mode: 'javascript'
         }
       }
     },
@@ -66,5 +68,6 @@ app.get('/questions/:id', function(req, res) {
 
 app.post('/questions/:id', function(req, res) {
   var id = parseInt(req.params.id, 10);
+  console.log(req.body);
   res.redirect(req.base + '/questions/' + (id + 1));
 });
