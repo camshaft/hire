@@ -20,7 +20,8 @@
     "poe-ui": "^0.4.4",
     "startup": "^0.3.0",
     "envs": "^0.1.4",
-    "express": "^3.6.0"
+    "express": "^3.6.0",
+    "shoelace-ui-aglet": "git+https://github.com/shoelace-ui/aglet.git"
   },
   "devDependencies": {
     "mocha": "*",

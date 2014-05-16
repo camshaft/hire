@@ -2,5 +2,6 @@ h2(data-hyper-bind="question.title")
 
 form(data-hyper-form="question.answer", data-hyper-handle="next")
   div(data-ng-repeat="input in inputs")
-    input(data-hyper-input="input")
+   div(data-ng-switch="input.type")
+     textarea(data-ng-switch-when="code", data-codearea="{{input.syntax}}")
   input(type="submit", value="Next")

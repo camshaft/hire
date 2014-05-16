@@ -1,5 +1,15 @@
 extends ../node_modules/poe-ui/views/layout
 
+block ie-shims
+  | <!--[if IE]>
+  style.
+    a, button, input { display: block; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f5ed', endColorstr='#e8e5db',GradientType=0); }
+    a:first-letter, button:first-letter, input:first-letter { text-transform: uppercase; }
+  | <![endif]>-->
+
+prepend scripts
+  script(src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js")
+
 block body
   header(data-ng-include, src="'/partials/header.jade'")
   .main-container

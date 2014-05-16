@@ -49,8 +49,9 @@ app.get('/questions/:id', function(req, res) {
       method: 'POST',
       input: {
         answer: {
-          type: 'textarea',
-          required: true
+          type: 'code',
+          required: true,
+          syntax: 'js'
         }
       }
     },
