@@ -1,5 +1,6 @@
 h2(data-hyper-bind="question.title")
 
-form(data-hyper-form="question.answer")
+form(data-hyper-form="question.answer", data-hyper-handle="next")
   div(data-ng-repeat="input in inputs")
     input(data-hyper-input="input")
+  input(type="submit", value="Next")

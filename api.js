@@ -45,7 +45,7 @@ app.get('/questions/:id', function(req, res) {
     title: 'Do a dance',
     answer: {
       type: 'code',
-      action: req.url,
+      action: res.locals.url,
       method: 'POST',
       input: {
         answer: {
@@ -61,4 +61,9 @@ app.get('/questions/:id', function(req, res) {
       href: req.base + '/questions/0'
     }
   });
+});
+
+app.post('/questions/:id', function(req, res) {
+  var id = parseInt(req.params.id, 10);
+  res.redirect(req.base + '/questions/' + (id + 1));
 });
