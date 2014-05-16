@@ -1,0 +1,13 @@
+{
+  "repo": "camshaft/hire",
+  "name": "hire",
+  "description": "An interview tool",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "poegroup/poe-ui": "^0.4.4",
+    "camshaft/component-angular": "1.0.8"
+  },
+  "development": {},
+  "license": "MIT"
+}
